@@ -1,15 +1,33 @@
-var triangle1Area = getTriangleArea(10, 15);
-var triangle2Area = getTriangleArea(13, 8);
-var triangle3Area = getTriangleArea(5, 13);
+var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
+var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
 
+var allNames = femaleNames.concat(maleNames);
 
-function getTriangleArea(a, h) {    
-    
-    if  ((a <= 0) || (h <= 0)) {
-        document.write('Nieprawidłowe dane');
-    } else {
-        return (a*h/2);
-    } 
+allNames.splice(2, 0, 'Lucjan', 'Jadźwiga', 'Olek');
+
+allNames.push('Lucjan');
+
+var newName = 'Marian';
+
+if (allNames.indexOf(newName) === -1) {
+    allNames.push(newName);
 }
 
-console.log(getTriangleArea(10, 6))
+console.log(allNames);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
