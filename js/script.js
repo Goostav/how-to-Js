@@ -1,14 +1,15 @@
+var triangle1Area = getTriangleArea(10, 15);
+var triangle2Area = getTriangleArea(13, 8);
+var triangle3Area = getTriangleArea(5, 13);
 
-var a = 0;
-var b = 0;
-var value = (a * a) - (2 * a * b) - (b * b);
 
-console.log(value);
-
-if (value == 0) {
-    document.write('wynik jest równy zero');
-} else {
-    (value > 0) ? document.write('wynik dodatni') : document.write('wynik ujemny');
+function getTriangleArea(a, h) {    
+    
+    if  ((a <= 0) || (h <= 0)) {
+        document.write('Nieprawidłowe dane');
+    } else {
+        return (a*h/2);
+    } 
 }
 
-
+console.log(getTriangleArea(10, 6))
