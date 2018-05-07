@@ -1,23 +1,14 @@
-var triangle1Area = getTriangleArea(10, 15);
-var triangle2Area = getTriangleArea(13, 8);
-var triangle3Area = getTriangleArea(5, 13);
+var text = 'Velociraptor is a genus of herbivorous ceratopsid dinosaur that first appeared during the late Maastrichtian stage of the late Cretaceous period.';
 
+var dinosaur = 'triceratops';
 
-function getTriangleArea(a, h) {    
-    
-    if  ((a <= 0) || (h <= 0)) {
-        return 'Nieprawidłowe dane';
-    } else {
-        return (a*h/2);
-    } 
- }
+var newText = text.replace('Velociraptor', (dinosaur.toUpperCase()));
 
-console.log(getTriangleArea(10, 6))
+console.log(newText.length/2);
 
+var brandNewtext = newText.slice(0,72);
 
-
-
-
+console.log(brandNewtext);
 
 
 
