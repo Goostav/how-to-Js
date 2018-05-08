@@ -6,7 +6,6 @@ var newFirstword = 'triceratops';
 
 var upperNewfirstWord = newFirstword.toUpperCase();
 
-
 function halfOfeveryText() {
     
     var newText = text.replace(textFirstword[0], upperNewfirstWord);
