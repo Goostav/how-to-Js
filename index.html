@@ -1,12 +1,27 @@
-<!-- index.html -->
-<html>
+<!DOCTYPE html>
+<html lang="">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page title</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1>Welcome to my page</h1>
-    <script type="text/javascript" src="js/scripts.js"></script>
+      <div class="content">
+      <img id="js-image" src="http://placehold.it/200x200" alt="" />
+      <br>
+      <input id="js-inputValue" type="text" />
+      <br>
+      <button onclick="checkOnclickEvent('test')" id="js-button">
+        Click me!
+      </button>
+      <ul id="list">
+          <li>item 0</li>
+      </ul>
+      <button id="addElem">
+      Dodaj
+      </button>
+      </div>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
