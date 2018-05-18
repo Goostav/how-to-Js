@@ -1,0 +1,45 @@
+body {
+    box-sizing: border-box; 
+}
+
+#carousel {
+    height: 500px;
+    width: 800px; 
+    margin: 20px auto;
+    border: 3px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+ul {
+    width: 4000px;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    object-fit: cover;
+    float: left;
+}
+
+img {
+    height: 500px; 
+    width: 800px;
+}
+
+a {
+    color: black;
+    position: absolute; 
+}
+
+.left {
+      top:  215px;
+      left: 25px; 
+}
+
+.right {
+      top:  215px;
+      right: 25px; 
+}
+    
